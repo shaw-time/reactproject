@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Teddy Bear",
+    "description": "Soft and cuddly plush toy",
+    "price": 15,
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 2,
+    "name": "Toy Car",
+    "description": "Fast and fun mini car",
+    "price": 10,
+    "image": "https://via.placeholder.com/150"
+  },
+  {
+    "id": 3,
+    "name": "Building Blocks",
+    "description": "Colorful blocks for creativity",
+    "price": 25,
+    "image": "https://via.placeholder.com/150"
+  }
+]
