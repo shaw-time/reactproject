@@ -1,0 +1,79 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling with animated black & gray gradient */
+body {
+  background: linear-gradient(-45deg, #000000, #222222, #7e7e47, #ffcc00);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #f5f5f5;                /* Light gray text for readability */
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Gradient animation keyframes */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+/* Links */
+a {
+  color: #1e90ff;                /* Bright blue links */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffcc00;                /* Gold hover effect */
+}
+
+/* Header */
+header {
+  background-color: #111;        /* Slightly lighter black */
+  padding: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  padding: 1rem;
+  border-top: 1px solid #333;
+  text-align: center;
+}
+
+/* Navigation list */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li {
+  display: inline;
+}
+
+/* Buttons */
+button {
+  background-color: #222;
+  color: #f5f5f5;
+  border: 1px solid #444;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+/* Main content area */
+main {
+  padding: 2rem;
+}

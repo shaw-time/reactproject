@@ -1,0 +1,90 @@
+/* Full-page gradient background with animation */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(-45deg, #000000, #1a1a1a, #333333, #ffd700);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #f1f1f1;
+}
+
+/* Gradient animation keyframes */
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Card styling with glow */
+.login-card {
+  background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4); /* stronger yellow glow */
+  width: 320px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.6);
+}
+
+/* Inputs */
+.login-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: none;
+  border-radius: 6px;
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.login-card input:focus {
+  outline: 2px solid #ffd700;
+  background-color: #333333;
+  transform: scale(1.02);
+}
+
+/* Gradient button */
+.login-card button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  background: linear-gradient(90deg, #ffd700, #ff9900);
+  color: #121212;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-card button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.7);
+}
+
+/* Links */
+.login-card a {
+  color: #ffd700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.login-card a:hover {
+  color: #ffea00;
+  text-decoration: underline;
+}
+
+/* Message text */
+.message {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #ffd700;
+}
